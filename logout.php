@@ -3,6 +3,6 @@ session_start();
 // hapus session
 session_destroy();
 
-// alihkan ke halaman login (index.html) dan berikan alert = 2
-header('Location: index.html?alert=2');
+// alihkan ke halaman login (index.php) dan berikan alert = 2
+header('Location: index.php?alert=2');
 ?>

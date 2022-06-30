@@ -8,7 +8,7 @@ $password = md5(mysqli_real_escape_string($mysqli, stripslashes(strip_tags(htmls
 
 // pastikan username dan password adalah berupa huruf atau angka.
 if (!ctype_alnum($username) OR !ctype_alnum($password)) {
-	header("Location: index.html?alert=1");
+	header("Location: index.php?alert=1");
 }
 else {
 	// ambil data dari tabel user untuk pengecekan berdasarkan inputan username dan passrword
@@ -33,7 +33,7 @@ else {
 
 	// jika data tidak ada, alihkan ke halaman login dan tampilkan pesan = 1
 	else {
-		header("Location: index.html?alert=1");
+		header("Location: index.php?alert=1");
 	}
 }
 ?>
